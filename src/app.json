@@ -1,0 +1,34 @@
+{
+	"pages": [
+		"pages/index/main",
+		"pages/book/main",
+		"pages/course/main",
+		"pages/user/main"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "因为书悦读馆",
+		"navigationBarTextStyle": "black"
+	},
+	"tabBar": {
+		"list": [
+			{
+				"pagePath": "pages/index/main",
+				"text": "主页"
+			},
+			{
+				"pagePath": "pages/book/main",
+				"text": "图书"
+			},
+			{
+				"pagePath": "pages/course/main",
+				"text": "课程"
+			},
+			{
+				"pagePath": "pages/user/main",
+				"text": "我的"
+			}
+		]
+	}
+}
