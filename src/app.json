@@ -1,29 +1,30 @@
 {
 	"pages": [
 		"pages/index/main",
-		"pages/book/main",
-		"pages/course/main",
+		"pages/quickOrder/main",
+		"pages/order/main",
 		"pages/user/main"
 	],
 	"window": {
 		"backgroundTextStyle": "light",
 		"navigationBarBackgroundColor": "#fff",
-		"navigationBarTitleText": "因为书悦读馆",
+		"navigationBarTitleText": "用人国际",
 		"navigationBarTextStyle": "black"
 	},
 	"tabBar": {
+		"custom": true,
 		"list": [
 			{
 				"pagePath": "pages/index/main",
-				"text": "主页"
+				"text": "首页"
 			},
 			{
-				"pagePath": "pages/book/main",
-				"text": "图书"
+				"pagePath": "pages/quickOrder/main",
+				"text": "快速下单"
 			},
 			{
-				"pagePath": "pages/course/main",
-				"text": "课程"
+				"pagePath": "pages/order/main",
+				"text": "订单"
 			},
 			{
 				"pagePath": "pages/user/main",

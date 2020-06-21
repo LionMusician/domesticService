@@ -1,6 +1,8 @@
 import Lang from '../utils/Lang';
 import v from '../utils/Validate';
 import tips from '../utils/Tips';
+import wx from '../utils/wx-api';
+import { mapActions } from "vuex";
 const mixins = {
     // 卸载页面
     // onUnload() {
@@ -9,6 +11,7 @@ const mixins = {
     //     }
     // },
     methods: {
+        ...mapActions(["setTabBarActive"]),
         // 校验
         check(rules) {
             for (let rule of rules) {
@@ -41,6 +44,26 @@ const mixins = {
                 return false;
             }
             return true;
+        },
+        tabBarChange(e) {
+            let index = e.mp.detail;
+            switch (index) {
+                case 0:
+                    wx.switchTab('/pages/index/main');
+                    break;
+                case 1:
+                    wx.switchTab('/pages/quickOrder/main');
+                    break;
+                case 2:
+                    wx.switchTab('/pages/order/main');
+                    break;
+                case 3:
+                    wx.switchTab('/pages/user/main');
+                    break;
+                default:
+                    break;
+            }
+            this.setTabBarActive(index);
         }
     }
 }

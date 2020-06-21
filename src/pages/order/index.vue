@@ -1,6 +1,6 @@
 <template>
 	<div class="container">
-		我的
+		课程
         
         <!-- tabBar -->
         <van-tabbar

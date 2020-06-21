@@ -1,0 +1,12 @@
+.loading-view {
+    width: 100%;
+    height: 80rpx;
+    @include fj(center);
+}
+
+.tab-icon {
+    @include sc(40rpx, #868686);
+}
+.tab-icon-active {
+    @include sc(40rpx, #8AD474);
+}

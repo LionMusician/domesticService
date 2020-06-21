@@ -13,8 +13,7 @@ import getters from './getter'
 Vue.use(Vuex)
 
 const state = {
-    test: 0,
-    master_key: "",
+    tabBarActive: 0,
 }
 
 export default new Vuex.Store({

@@ -1,6 +1,6 @@
 <template>
 	<div class="container">
-		我的
+		图书
         
         <!-- tabBar -->
         <van-tabbar
